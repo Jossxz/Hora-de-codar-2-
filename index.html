@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de Codar 2!</title>
+</head>
+<body>
+    <script>
+        /* //atividade 1
+        alert("escreava dois números: ")
+        var clientN = parseInt(prompt("Primeiro número: "));
+        var clientN2 = parseInt(prompt("Segundo número: "));
+
+        if(clientN > clientN2){
+            alert("O maior número é o primeiro com o valor de :" + clientN);
+        }else{
+            alert("o maior número é o segundo com o valor de: " + clientN2);
+        } */
+
+    /*  //atividade 2
+        alert("Avaliador de números positivos e negativos");
+        var clientN = parseInt(prompt("Me informe um valor: "));
+        if(clientN > 0){
+            alert("Seu número é positivo")
+        }else if(clientN == 0){
+            alert("seu número é zero")
+        }else{
+            alert("seu número é negativo")
+        }
+        */
+       /*//Atividade 3
+       alert("Avaliador de maior número");
+        var clientN = parseInt(prompt("Informe o primeiro número: "));
+        var clientN2 = parseInt(prompt("Informe o segundo número: "));
+        var clientN3 = parseInt(prompt("Informe o terceiro número: "));
+
+        if(clientN == clientN2 && clientN == clientN3){
+            alert("Tente novamente! foi avaliado um número igual.")
+        }else if(clientN2 == clientN && clientN2 == clientN3){
+            alert("Tente novamente! foi avaliado um número igual.")
+        }else if(clientN3 == clientN && clientN3 == clientN2){
+            alert("Tente novamente! foi avaliado um número igual.")
+        }else{
+            alert("Algum valor não foi inserido corretamente, tente novamente!")
+        } 
+
+        if(clientN > clientN2 && clientN > clientN3){
+            alert("O maior número foi o primeiro com o valor de: " + clientN)
+        }else if(clientN2 > clientN && clientN2 > clientN3){
+            alert("O maior número foi o segundo com o valor de: " + clientN2)
+        }else if(clientN3 > clientN && clientN3 > clientN2){
+            alert("O maior número foi o terceiro com o valor de: " + clientN3)
+        } */ 
+
+        /* //atividade 4
+        alert("Avaliador de primeiro e segundo número maior");
+        var clientN = parseInt(prompt("Informe o primeiro valor: "));
+        var clientN2 = parseInt(prompt("Informe o segundo valor: "));
+        var clientN3 = parseInt(prompt("Informe o terceiro valor: "));
+
+        if(clientN == clientN2 && clientN == clientN3){
+            alert("Tente novamente! foi avaliado um número igual.")
+        }else if(clientN2 == clientN && clientN2 == clientN3){
+            alert("Tente novamente! foi avaliado um número igual.")
+        }else if(clientN3 == clientN && clientN3 == clientN2){
+            alert("Tente novamente! foi avaliado um número igual.")
+        }
+
+        // primeiro numero maior
+        if(clientN > clientN2 && clientN > clientN3){
+            alert("O maior número foi o primeiro com o valor de: " + clientN)
+        }else if(clientN2 > clientN && clientN2 > clientN3){
+            alert("O maior número foi o segundo com o valor de: " + clientN2)
+        }else if(clientN3 > clientN && clientN3 > clientN2){
+            alert("O maior número foi o terceiro com o valor de: " + clientN3)
+        }else{
+            alert("algo deu errado!")
+        } 
+        // segundo número maior
+        if(clientN > clientN2 && clientN < clientN3){
+            alert("o segundo número maior é: "+clientN)
+        }else if(clientN2 > clientN && clientN2 < clientN3){
+            alert("o segundo número maior é: "+clientN2)
+        }else if(clientN3 > clientN2 && clientN3 < clientN){
+            alert("O segundo número maior é : "+clientN3)
+        }else{
+            alert("algo deu errado!")
+        }        
+        */
+
+        /*//atividade 5
+        alert("Calculadora de valores aritmédicos");
+        var clientR = [
+        parseFloat(prompt("Informe o primeiro valor: ")),
+        parseFloat(prompt("Informe o segundo valor:")),
+        parseFloat(prompt("Informe o terceiro valor:")),
+        parseFloat(prompt("Informe o quarto valor:")),
+        parseFloat(prompt("Informe o quinto valor:")),
+        parseFloat(prompt("Informe o sexto valor:"))
+        ]
+        var clientS = clientR[0] + clientR[1] + clientR[2] + clientR[3] + clientR[4] + clientR[5];
+        var clientDiv = clientS / 6;
+
+        alert("A média aritmética desses valores é: "+clientDiv)
+        */
+        /* //atividade 6 BUG NA LINHA 116 A 124
+        alert("Avaliador de primeiro número, último e o maior deles")
+        var clientR = [
+        parseInt(prompt("Informe o primeiro número: ")),
+        parseInt(prompt("Informe o segunda número: ")),
+        parseInt(prompt("Informe o terceiro número: ")),
+        parseInt(prompt("Informe o quarto número: ")),
+        ]
+
+        if(clientR[0] == clientR[1,2,3]){
+            alert("Tente novamente! foi avaliado um número igual.");
+        }else if(clientR[1] == clientR[0,2,3]){
+            alert("Tente novamente! foi avaliado um número igual.");
+        }else if(clientR[2] == clientR[0,1,3]){
+            alert("Tente novamente! foi avaliado um número igual.");
+        }else if(clientR[3] == clientR[0,1,2]){
+            alert("Tente novamente! foi avaliado um número igual.");
+        }
+
+        if(clientR[0] > clientR [1,2,3]){
+        alert("Primeiro número informado: "+clientR[0]+" O último número informado " + clientR[3] +" Maior entre todos: "+ clientR[0]);
+        }else if(clientR[1] > clientR[0,2,3]){
+            alert("Primeiro número informado: "+clientR[0]+" O último número informado " + clientR[3] +" Maior entre todos: "+clientR[1]);
+        }else if(clientR[2] > clientR[0,1,3]){
+            alert("Primeiro número informado: "+clientR[0]+" O último número informado " + clientR[3] +" Maior entre todos: "+clientR[2]);
+        }else if(clientR[3] > clientR[0,1,2]){
+            alert("Primeiro número informado: "+clientR[0]+" O último número informado " + clientR[3] +" Maior entre todos: "+clientR[3]);
+        }
+        */
+
+        /*//atividade 7
+        alert("Calculadora 72");
+        var clientR = [
+        parseFloat(prompt("Informe o primeiro valor: ")),
+        parseFloat(prompt("Informe o segundo valor:")),
+        parseFloat(prompt("Informe o terceiro valor:")),
+        parseFloat(prompt("Informe o quarto valor:")),
+        parseFloat(prompt("Informe o quinto valor:")),
+        parseFloat(prompt("Informe o sexto valor:"))
+        ]
+        var clientS = clientR[0] + clientR[1] + clientR[2] + clientR[3] + clientR[4] + clientR[5];
+        
+        if(clientR[0,1,2,3,4,5] < 72){
+            alert("Valor final: " + clientS + " Número informados: " + clientR[0] + "," + clientR[1] +","+ clientR[2] +","+ clientR[3] +","+ clientR[4] +","+ clientR[5])
+        }else{
+            alert("está calculadora somente soma números menores que 72")
+        } */
+
+       /* // atividade 8 divido por 4
+        alert("Bem vindo! A calculadora de média semestral dos estudantes, informe 4 notas recém adquiridas no próximo pop up ");
+        var note = parseFloat(prompt("Informe a Primeira nota: "));
+        var note2 = parseFloat(prompt("Informe a Segunda nota: "));
+        var note3 = parseFloat(prompt("Informe a Terceira nota: "));
+        var note4 = parseFloat(prompt("Informe a Quarta nota: "));
+        var media = note + note2 + note3 + note4 ;
+        var mediaF = media / 4;
+
+        // aviso para não ocorrer números maiores que 10 e menores que 0
+        if(note > 10 || note < 0){
+            alert("APENAS NOTAS DE 0 A 10, algo foi escrito errado!");
+        }else if(note2 > 10 || note2 < 0){
+            alert("APENAS NOTAS DE 0 A 10, algo foi escrito errado!");
+        }else if(note3 > 10 || note3 < 0){
+            alert("APENAS NOTAS DE 0 A 10, algo foi escrito errado!");
+        }else if(note4 > 10 || note4 < 0){
+            alert("APENAS NOTAS DE 0 A 10, algo foi escrito errado!");
+        }
+
+        //corfimação se passou ou nãos
+        if(mediaF >= 5){
+            alert("você passou!");
+        }else{
+            alert("tente novamente!");
+        }
+       */
+
+       /* //Atividade 9
+        alert("Conhecimento de voto! saiba a idade para votar: ")
+        var clientN = parseInt(prompt("Informe sua idade: "))
+        var clientI = 2023 - clientN;
+        if(clientI > 18 && clientI < 70){
+            alert("Você tem "+clientI+" Já tem o direito de voto, PODE VOTAR!")
+        }else{
+            alert("Você não tem a idade nescessária para o voto, apenas com 18 a 70 anos.")
+        } */
+
+       /* //atividade 10
+        alert("Calculadora de peso ideal")
+        var clientR = [
+            parseFloat(prompt("Me escreva seu gênero biológico: 1 = Feminino 2 = Masculino")),
+            parseFloat(prompt("Me escreva sua altura: ")),
+        ]
+        var clientM = parseFloat((72.7 * clientR[1]) - 58);
+        var clientF = parseFloat((62.1 * clientR[1]) - 44.7);
+        
+        if(clientR[0] == 1){
+            alert("Seu peso Feminino ideal é : " + clientM);
+        }else if(clientR[0] == 2){
+            alert("Seu peso Masculino ideal é : " + clientF);
+        }
+        */
+
+    /*  //Atividade 11
+        alert("Uma micro Calculadora");
+        var clientR = [
+            parseInt(prompt("Me informe o primeiro valor: ")),
+            parseInt(prompt("Informe com números, qual operação deseja realizar: 1 = Adição, 2 = subtração, 3 = divisão, 4 = multiplicação")),
+            parseInt(prompt("Me informe o segundo valor: ")),
+        ]
+        var clientAd = clientR[0] + clientR[2];
+        var clientSub = clientR[0] - clientR[2];
+        var clientDiv = clientR[0] / clientR[2];
+        var clientMul = clientR[0] * clientR[2];
+
+        if(clientR[1] == 1){
+            alert("Seu resultado de adição é: " + clientAd)
+        }else if(clientR[1] == 2){
+            alert("Seu resultado de subtração é: " + clientSub)
+        }else if(clientR[1] == 3){
+            alert("Seu resultado de divisão é: " + clientDiv)
+        }else if(clientR[1] == 4){
+            alert("Seu resultado de multiplicação é: " + clientMul)
+        }else{
+            alert("A operação aritmética solicitada não existe, tente novamente!")
+        }
+            */
+    </script>
+</body>
+</html>
